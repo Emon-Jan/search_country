@@ -9,7 +9,7 @@ function Search() {
     SearchContext
   );
   return (
-    <Card title="Country Details" bordered={false} style={{ width: 300 }}>
+    <Card title="Search with Capital" bordered={false} style={{ width: 300 }}>
       <Input
         className="text-input"
         autoFocus={true}

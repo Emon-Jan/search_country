@@ -15,7 +15,6 @@ class AppContext extends Component {
       const searchResponse = await axios.get(
         `https://restcountries.eu/rest/v2/capital/${this.state.searchCapital}`
       );
-      console.log(searchResponse);
       if (searchResponse.status === 200) {
         this.setState({
           result: searchResponse.data,
