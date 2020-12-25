@@ -9,12 +9,14 @@ const { Content } = Layout;
 
 function App() {
   return (
-    <Layout className="App">
+    <Layout>
       <Content>
         <AppContext>
-          <Search></Search>
-          <Result></Result>
-          <Detail></Detail>
+          <div className="App">
+            <Search></Search>
+            <Result></Result>
+            <Detail></Detail>
+          </div>
         </AppContext>
       </Content>
     </Layout>

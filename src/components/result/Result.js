@@ -6,7 +6,7 @@ import "./Result.css";
 function Result() {
   const { result, showDetail } = useContext(SearchContext);
   return (
-    <Card title="Card title" bordered={false} style={{ width: 300 }}>
+    <Card title="Results" bordered={false} style={{ width: 300 }}>
       {result.map((country, i) => (
         <div
           key={i}

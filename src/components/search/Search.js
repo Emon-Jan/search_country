@@ -2,12 +2,14 @@ import { Input } from "antd";
 import React, { useContext } from "react";
 import { SearchContext } from "../../contexts/AppContext";
 
+import { Card } from "antd";
+
 function Search() {
   const { searchCapital, handleOnChange, searchCountry } = useContext(
     SearchContext
   );
   return (
-    <div>
+    <Card title="Country Details" bordered={false} style={{ width: 300 }}>
       <Input
         className="text-input"
         autoFocus={true}
@@ -17,7 +19,7 @@ function Search() {
         onPressEnter={searchCountry}
         value={searchCapital}
       />
-    </div>
+    </Card>
   );
 }
 
